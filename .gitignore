@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+/.idea/
+Aparito_Test_Project.iml
