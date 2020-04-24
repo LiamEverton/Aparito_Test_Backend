@@ -8,6 +8,9 @@ import static spark.route.HttpMethod.before;
 
 public class Application {
 
+    /**
+     * Entry point for the web application.
+     */
     public static void main(String[] args) {
         //Configure Spark.
         Spark.port(4567);

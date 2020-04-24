@@ -7,8 +7,16 @@ import spark.Route;
 
 public class PrimeController {
 
-    private static String PRIME_INPUT_ATTRIBUTE = "max-prime-number";
+    /**
+     * Used in the fetchPrime route.
+     */
+    private static final String PRIME_INPUT_ATTRIBUTE = "max-prime-number";
 
+    /**
+     * Defines the route for calculating prime numbers based off of a maximum input.
+     *
+     * the maximum prime attribute is defined as PRIME_INPUT_ATTRIBUTE.
+     */
     public static Route fetchPrime = (Request request, Response response) -> {
         try {
             int attribute = Integer.parseInt(request.queryParams(PRIME_INPUT_ATTRIBUTE));

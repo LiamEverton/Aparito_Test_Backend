@@ -10,6 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PrimeTest {
 
+
+    /**
+     * Prime Test for the input of 5.
+     */
     @Test
     void primeInput5() {
         List<Integer> primes = new ArrayList<Integer>();
@@ -21,6 +25,9 @@ public class PrimeTest {
         assertEquals(primes, Prime.calculatePrimes(5));
     }
 
+    /**
+     * Prime Test for the input of 50.
+     */
     @Test
     void primeInput50() {
         List<Integer> primes = new ArrayList<Integer>();
