@@ -12,6 +12,6 @@ public class Application {
         //Configure Spark.
         Spark.port(4567);
 
-//        Spark.get(Path.Web.PRIME, PrimeController.fetchPrime);
+        Spark.get(Path.Web.PRIME, PrimeController.fetchPrime);
     }
 }
