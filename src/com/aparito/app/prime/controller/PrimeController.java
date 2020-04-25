@@ -27,8 +27,6 @@ public class PrimeController {
 
             return Prime.calculatePrimes(attribute);
         } catch (NumberFormatException exception) {
-            exception.printStackTrace();
-
             response.status(406);
             return new ObjectMapper().writeValueAsString("Invalid number.");
         }
